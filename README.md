@@ -9,3 +9,6 @@ This project was done by :
 * [I. Anders Arnold](https://github.com/asquare004)
 * [Ishika Hoondlani](https://github.com/ishikahoondlani26)
 * [Srushti Chaudhari](https://github.com/srushtichaudhari7)
+
+## References
+We were asked to integrate our code with the [code of an online note editor](https://github.com/surdebmalya/surdebmalya.github.io/blob/main/notes.html) provided by our mentors.
