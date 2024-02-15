@@ -1,5 +1,5 @@
-# SNEditor with Chatbox
-This repository contains code of our Operating Systems Project : SNEditor with Chatbox. 
+# Note Editor with Chatbox
+This repository contains code of our Operating Systems Project : Note Editor with Chatbox. 
 ## Description
 We were given code of a note editor by our mentors. We were supposed to build a chatbox and integrate it to the note editor.
 ## Team Members
@@ -14,7 +14,7 @@ This project was done by :
 * CSS
 * JavaScript
 * Node.js
-## Development
+## Development Methodology
 We will first create a chat icon at the left bottom corner of the editor using HTML, CSS and JavaScript. When the chat icon is clicked, it will open a small chatbox. Anyone using the server will be able to chat with each other. We can build this with the help of HTML, CSS, JavaScript and Node.js.
 ## References
 We were asked to integrate our code with the [code of an online note editor](https://github.com/surdebmalya/surdebmalya.github.io/blob/main/notes.html) provided by our mentors.
