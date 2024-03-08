@@ -7,6 +7,7 @@
     <title>Notes</title>
     <link rel="icon" href="https://i.ibb.co/Q8Bmh0n/images.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chatbox.css">
     <style>
         body {
             margin: 0;
@@ -154,6 +155,19 @@
 </head>
 
 <body>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h2>Chat</h2>
+        </div>
+        <div class="chat-body">
+        </div>
+        <div class="chat-footer">
+          <input type="text" placeholder="Message...">
+          <button>Send</button>
+        </div>
+      </div>
+      <script src="chatbox.js"></script>
 
     <div class="toggle-container">
         <label class="toggle" id="toggleBackground">
