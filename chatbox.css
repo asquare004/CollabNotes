@@ -27,7 +27,8 @@ body {
   }
   
   .chat-header {
-    background-color: #7332d6;
+    background-color: #3a12ff;
+    background-image: linear-gradient(45deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%);
     padding: 10px;
     border-bottom: 1px solid #7332d6;
   }
@@ -42,7 +43,28 @@ body {
     height: 200px;
     overflow-y: auto;
   }
-  
+  .outgoing-chats-msg p {
+    background-color: #3a12ff;
+    background-image: linear-gradient(45deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
+}
+.outgoing-chats-msg {
+        float: right;
+        width: 46%;
+    }
+  .time {
+      color: #777;
+      display: block;
+      font-size: 12px;
+      margin: 8px 0 0;
+  }
   .chat-footer {
     padding: 10px;
   }
@@ -52,7 +74,9 @@ body {
     padding: 5px;
     margin-right: 5px;
   }
-  
+  .send-icon {
+    font-weight: bold !important;
+  }
   .chat-footer button {
     padding: 5px 10px;
     background-color: #4329ab;
@@ -60,4 +84,5 @@ body {
     border: none;
     cursor: pointer;
   }
+  
   
