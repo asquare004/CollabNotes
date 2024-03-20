@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const chatIcon = document.getElementById("chatIcon");
     const chatBox = document.getElementById("chatBox");
     const closeBtn = document.getElementById("closeBtn");
-  
+
     chatIcon.addEventListener("click", function() {
       chatBox.style.display = "block";
     });
@@ -12,3 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+  function displayMessage(){
+    var Message = document.getElementById('message').value;
+    var outMessage = document.getElementById('outgoing-msg');
+    outMessage.innerHTML = Message;  
+  }
