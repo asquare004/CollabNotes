@@ -10,7 +10,7 @@
     "rest",
     "api"
   ],
-  "author": "Shashank Tiwari",
+  "author": "Srushti",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^3.0.4",
