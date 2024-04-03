@@ -1,7 +1,3 @@
-/*
-* Real time private chatting app using Angular 2, Nodejs, mongodb and Socket.io
-* @author Shashank Tiwari
-*/
 
 const expressConfig = require('./express-config');
 const bodyParser = require('body-parser');
