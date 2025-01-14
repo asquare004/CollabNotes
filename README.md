@@ -8,7 +8,7 @@ This project was done by :
 * [Ishika Hoondlani](https://github.com/ishikahoondlani26)
 * [Srushti Chaudhari](https://github.com/srushtichaudhari7)
 ## Description
-We were given code of a note editor by our mentors. We were supposed to build a chatbox and integrate it to the note editor.
+This website provides a note editor that can be concurrently used by multiple users along with a chatbox.
 ## Tech Stack Used
 * HTML
 * CSS
