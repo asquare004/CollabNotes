@@ -22,5 +22,4 @@ First we will add a chat icon at the bottom left corner of the note editor. When
 * [14/03/2024] Added code of preliminary chatbox. The chatbox icon is visible and when clicked, a chatbox pops up. Chatting feature hasn't been fully deveoped yet.
 * [21/03/2024] Incoming message feature was developed and few improvements were made to enhance the appearance of the chatbox.
 * [04/04/2024] We tried to link frontend with backend.
-## References
-We were asked to integrate our code with the [code of an online note editor](https://github.com/surdebmalya/surdebmalya.github.io/blob/main/notes.html) provided by our mentors.
+
