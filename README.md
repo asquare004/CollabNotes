@@ -26,6 +26,5 @@ This project was done by :
 - **Rich Note Editor**: Write, edit, and save your notes locally as `.txt` files.
 - **Real-Time Chat**: Chat with other users simultaneously in the integrated chatbox.
 - **Dark Mode Support**: Switch between light and dark themes for better accessibility.
-- **Responsive Design**: Works seamlessly across devices and screen sizes.
 - **Multiple Users**: Allows multiple users to interact in the same chat session.
 
