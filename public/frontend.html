@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes with Chat</title>
+    <link rel="stylesheet" href="chatbox.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <!-- Chat Icon -->
+    <div class="chat-icon" id="chatIcon">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2 style="color: white;">Chat</h2>
+        </div>
+        <div class="chat-body">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="message" placeholder="Message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Note Editor -->
+    <input type="text" id="noteTitle" placeholder="Enter A Title For Your Note">
+    <textarea id="userText" placeholder="Start Writing Your Notes"></textarea>
+    <button id="downloadButton" onclick="downloadNote()">Download</button>
+
+    <script src="chatbox.js"></script>
+    <script>
+        const socket = io();
+        const username = prompt("Enter your username:");
+        socket.emit("createUser", username);
+        socket.on("updateChat", (sender, message) => {
+            const chatBody = document.querySelector(".chat-body");
+            const msgElement = document.createElement("div");
+            msgElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatBody.appendChild(msgElement);
+        });
+        function sendMessage() {
+            const message = document.getElementById("message").value.trim();
+            if (message) socket.emit("sendMessage", message);
+        }
+        function downloadNote() {
+            const title = document.getElementById("noteTitle").value || "Untitled";
+            const content = document.getElementById("userText").value;
+            const blob = new Blob([content], { type: "text/plain" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = `${title}.txt`;
+            link.click();
+        }
+    </script>
+</body>
+</html>
