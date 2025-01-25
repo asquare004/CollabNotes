@@ -1,7 +1,7 @@
-# Note Editor with Chatbox
+# CollabNotes
 
 ## Description
-This project is a web-based application that allows users to write and download notes while chatting with other users in real time. It's a simple and interactive tool for collaborative note-taking and communication.
+This project is a web-based application that allows users to write and download notes while chatting with other users in real time. It's a simple and interactive tool for collaborative note-taking and communication. We submitted CollabNotes as our project for Operating Systems Lab (CSC 211).
 ## Team Members
 This project was done by :
 
